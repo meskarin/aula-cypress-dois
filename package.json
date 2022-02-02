@@ -1,0 +1,23 @@
+{
+  "name": "aula-cypress-dois",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meskarin/aula-cypress-dois.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meskarin/aula-cypress-dois/issues"
+  },
+  "homepage": "https://github.com/meskarin/aula-cypress-dois#readme",
+  "dependencies": {
+    "cypress": "^9.4.1"
+  }
+}
