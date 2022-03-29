@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/meskarin/aula-cypress-dois#readme",
   "dependencies": {
-    "cypress": "^9.4.1"
+    "cypress": "^9.4.1",
+    "faker-br": "^0.4.1"
   }
 }
