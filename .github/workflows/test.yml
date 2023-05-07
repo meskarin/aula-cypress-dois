@@ -2,7 +2,7 @@ name : EBAC ci
 
 on : 
   push:
-    branches: [ci]
+    branches: [main]
 
   workflow_dispatch:
 
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@ci
+      - uses: actions/checkout@gh-actions
       - name: Set Node env
         uses: actions/setup-node@v2
         with:
