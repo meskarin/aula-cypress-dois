@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx serverest",
+    "cy:run-ci": "start-server-and-test start http://localhost:3000/api-doc test"
   },
   "repository": {
     "type": "git",
@@ -19,7 +21,8 @@
   "homepage": "https://github.com/meskarin/aula-cypress-dois#readme",
   "dependencies": {
     "cypress": "^9.4.1",
-    "faker-br": "^0.4.1"
+    "faker-br": "^0.4.1",
+    "start-server-and-test": "^2.0.0"
   },
   "devDependencies": {
     "mochawesome": "^7.1.3",
