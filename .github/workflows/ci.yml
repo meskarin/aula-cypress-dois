@@ -26,4 +26,4 @@ jobs:
         uses: peaceiris/action-gh-pages@v3.1.12
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
-          publish_dir: ./mochawesome-report
+          publish_dir: ../mochawesome-report
