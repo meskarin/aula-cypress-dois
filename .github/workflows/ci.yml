@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@ci
+      - uses: actions/checkout@main
       - name: Set Node env
         uses: actions/setup-node@v2
         with:
