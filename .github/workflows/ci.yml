@@ -23,7 +23,7 @@ jobs:
           install-command: npm install
           browser: chrome
       - name: Publish Report
-        uses: peaceiris/action-gh-pages@v3.1.12
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           publish_dir: ../mochawesome-report
