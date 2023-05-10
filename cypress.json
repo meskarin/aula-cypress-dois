@@ -6,6 +6,6 @@
         "overwrite": false,
         "reportFileName": "index.html",
         "html": true,
-        "json": true
+        "json": false
     }
 }
