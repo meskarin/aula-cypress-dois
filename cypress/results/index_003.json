@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-10T05:07:50.531Z",
-    "end": "2023-05-10T05:07:58.364Z",
-    "duration": 7833,
+    "start": "2023-05-24T02:20:25.326Z",
+    "end": "2023-05-24T02:20:32.845Z",
+    "duration": 7519,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a4f0cbf0-750b-47da-98c8-90f93e977db7",
+      "uuid": "e1a40c29-9df2-4c20-b5a2-0f16cc1ea678",
       "title": "",
       "fullFile": "cypress/integration/cadastro-pageObjects.spec.js",
       "file": "cypress/integration/cadastro-pageObjects.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8f199821-fdbf-4f87-96af-d7e5da8d1472",
+          "uuid": "3ca0db09-28e6-47af-9163-451e97d2f971",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve fazer cadastro do usuário",
               "fullTitle": "Cadastro Deve fazer cadastro do usuário",
               "timedOut": null,
-              "duration": 7814,
+              "duration": 7499,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "let email = faker.internet.email();\nlet pass = faker.internet.password();\nmainPage.acessLoginPage();\nloginPage.register(email, pass);\ndashboardPage.titleMain.should('be.visible');",
               "err": {},
-              "uuid": "4a3093c0-c3b0-419b-ab50-f6271ff696c9",
-              "parentUUID": "8f199821-fdbf-4f87-96af-d7e5da8d1472",
+              "uuid": "c84b1251-eb42-436e-b869-39c3abbde8ac",
+              "parentUUID": "3ca0db09-28e6-47af-9163-451e97d2f971",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4a3093c0-c3b0-419b-ab50-f6271ff696c9"
+            "c84b1251-eb42-436e-b869-39c3abbde8ac"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7814,
+          "duration": 7499,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -94,9 +94,9 @@
     },
     "marge": {
       "options": {
-        "reportDir": "mochawesome-report",
-        "overwrite": false,
+        "reportDir": "cypress/results",
         "reportFilename": "index.html",
+        "overwrite": false,
         "html": true,
         "json": true
       },

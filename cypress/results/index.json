@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-10T04:52:25.765Z",
-    "end": "2023-05-10T04:52:34.671Z",
-    "duration": 8906,
+    "start": "2023-05-24T02:14:57.238Z",
+    "end": "2023-05-24T02:15:05.286Z",
+    "duration": 8048,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "702a70a5-0070-492d-9c03-08ec6b8111d0",
+      "uuid": "d01234c0-2ba0-4d4e-af9e-ef4550c9d17b",
       "title": "",
       "fullFile": "cypress/integration/cadastro-pageObjects.spec.js",
       "file": "cypress/integration/cadastro-pageObjects.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3d89fd13-f0ec-4c78-8647-096358a45b62",
+          "uuid": "00d7c3cd-c4b4-4d6f-9160-dcf53aedda3e",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve fazer cadastro do usuário",
               "fullTitle": "Cadastro Deve fazer cadastro do usuário",
               "timedOut": null,
-              "duration": 8884,
+              "duration": 8025,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "let email = faker.internet.email();\nlet pass = faker.internet.password();\nmainPage.acessLoginPage();\nloginPage.register(email, pass);\ndashboardPage.titleMain.should('be.visible');",
               "err": {},
-              "uuid": "45c302b3-d115-4150-9f70-fffec8066358",
-              "parentUUID": "3d89fd13-f0ec-4c78-8647-096358a45b62",
+              "uuid": "f968f6b5-61ab-4a6e-998e-34f71acf5de9",
+              "parentUUID": "00d7c3cd-c4b4-4d6f-9160-dcf53aedda3e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "45c302b3-d115-4150-9f70-fffec8066358"
+            "f968f6b5-61ab-4a6e-998e-34f71acf5de9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8884,
+          "duration": 8025,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -83,7 +83,7 @@
     "mochawesome": {
       "options": {
         "quiet": false,
-        "reportFilename": "mochawesome",
+        "reportFilename": "index.html",
         "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
@@ -94,9 +94,9 @@
     },
     "marge": {
       "options": {
-        "reportDir": "mochawesome-report",
+        "reportDir": "cypress/results",
+        "reportFilename": "index.html",
         "overwrite": false,
-        "reportFileName": "index.html",
         "html": true,
         "json": true
       },
