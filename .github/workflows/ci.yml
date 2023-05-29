@@ -22,6 +22,8 @@ jobs:
         with:
           install-command: npm install
           browser: chrome
+      - name: Instalar dependências
+        run: npm ci
       - name: Gerar relatório
         run: npm run report
       - name: Mesclar relatórios
