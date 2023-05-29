@@ -11,15 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v2
 
       - name: Set Node env
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-
-      - name: Instalar dependências
-        run: npm ci
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
@@ -30,7 +27,7 @@ jobs:
 
       - name: Gerar relatório
         run: npm run report
-        
+
       - name: Mesclar relatórios
         run: npm run merge
 
