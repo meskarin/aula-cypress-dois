@@ -24,6 +24,8 @@ jobs:
           browser: chrome
       - name: Instalar dependências
         run: npm ci
+      - name: Instalar dependências
+        run: npm run teste
       - name: Gerar relatório
         run: npm run report
       - name: Mesclar relatórios
