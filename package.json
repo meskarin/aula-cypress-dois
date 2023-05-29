@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",reportFilename=\"index.html\",overwrite=false,html=true,json=true && npx mochawesome-merge \"cypress/results/*.json\" -o index.json && npx marge index.json",
+    "testing": "npx cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",reportFilename=\"index.html\",overwrite=false,html=true,json=true",
     "report": "npx mochawesome-merge \"cypress/results/*.json\" -o index.json",
     "merge": "npx marge index.json",
-    "start": "npx serverest",
-    "cy:run-ci": "start-server-and-test start http://localhost:3000/api-doc test"
+  "complete": "npm run testing report merge"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,6 @@
   "dependencies": {
     "cypress": "^9.4.1",
     "faker-br": "^0.4.1",
-    "start-server-and-test": "^2.0.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
