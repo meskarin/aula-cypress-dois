@@ -22,6 +22,10 @@ jobs:
         with:
           install-command: npm install
           browser: chrome
+      - name: Gerar relatório
+        run: npm run report
+      - name: Mesclar relatórios
+        run: npm run merge
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         with:
