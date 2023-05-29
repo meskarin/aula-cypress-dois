@@ -3,7 +3,8 @@ name : EBAC ci
 on : 
   push:
     branches: [main]
-
+  
+ # acionar manual
   workflow_dispatch:
 
 jobs:
