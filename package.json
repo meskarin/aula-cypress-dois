@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",reportFilename=\"index.html\",overwrite=false,html=true,json=true && npx mochawesome-merge \"cypress/results/*.json\" -o index.json && npx marge index.json",
     "testing": "npx cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",reportFilename=\"index.html\",overwrite=false,html=true,json=true",
-    "report": "npx mochawesome-merge \"cypress/results/*.json\" -o index.json",
+    "report": "npx mochawesome-merge \"mochawesome-report/*.json\" -o index.json",
     "merge": "npx marge index.json",
   "complete": "npm run testing report merge"
   },

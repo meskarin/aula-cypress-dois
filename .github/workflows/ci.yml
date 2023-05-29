@@ -26,6 +26,12 @@ jobs:
           install-command: npm install
           browser: chrome
 
+      - name: Generate report
+        run: npx report # Executa o comando para gerar o relatório
+
+      - name: Merge reports
+        run: npx merge # Executa o comando para mesclar os relatórios
+
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
         with:
