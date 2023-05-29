@@ -54,4 +54,14 @@ describe('Intercept cart', () => {
         cy.get(':nth-child(1) > .product-remove > .remove > .fa').click()
         cy.visit('/carrinho/')
     })    
+    it('Mocking Remove item', () => {
+        cy.intercept('GET','/carrinho/?removed*',{ fixture: 'cart emphty.html' }).as ('mockingCartEmpthy')
+        cy.visit('/product/abominable-hoodie/')
+        cy.get('.button-variable-item-XS').click()
+        cy.get('.button-variable-item-Blue').click()
+        cy.get('.single_add_to_cart_button').click()
+        cy.visit('/carrinho/')
+        cy.get(':nth-child(1) > .product-remove > .remove > .fa').click()
+        cy.visit('/carrinho/')
+    })    
 });
