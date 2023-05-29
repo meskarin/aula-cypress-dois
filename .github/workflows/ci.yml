@@ -18,9 +18,6 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Instalar dependências
-        run: npm ci
-
       - name: Cypress run
         uses: cypress-io/github-action@v2
         continue-on-error: true
