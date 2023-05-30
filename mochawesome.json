@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-05-30T02:48:38.679Z",
-    "end": "2023-05-30T02:48:54.672Z",
-    "duration": 15993,
+    "start": "2023-05-30T02:53:07.298Z",
+    "end": "2023-05-30T02:53:16.083Z",
+    "duration": 8785,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "be4ebd7c-390b-424f-b580-d2ae5a433d1d",
+      "uuid": "f178fcd6-9d32-42d6-8e61-e195e2d84747",
       "title": "",
       "fullFile": "cypress/integration/cadastro-pageObjects.spec.js",
       "file": "cypress/integration/cadastro-pageObjects.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "223f57a5-2377-4b66-8a4e-0ad120e6d07f",
+          "uuid": "3a1f6a96-92e0-4942-b341-5bb010584e54",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Deve fazer cadastro do usuário",
               "fullTitle": "Cadastro Deve fazer cadastro do usuário",
               "timedOut": null,
-              "duration": 15938,
+              "duration": 8743,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "let email = faker.internet.email();\nlet pass = faker.internet.password();\nmainPage.acessLoginPage();\nloginPage.register(email, pass);\ndashboardPage.titleMain.should('be.visible');",
               "err": {},
-              "uuid": "fa69549c-5c56-446b-8c29-fb6f9b31a492",
-              "parentUUID": "223f57a5-2377-4b66-8a4e-0ad120e6d07f",
+              "uuid": "3381930c-3c83-4c60-9230-d172b99b79c0",
+              "parentUUID": "3a1f6a96-92e0-4942-b341-5bb010584e54",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fa69549c-5c56-446b-8c29-fb6f9b31a492"
+            "3381930c-3c83-4c60-9230-d172b99b79c0"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15938,
+          "duration": 8743,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
