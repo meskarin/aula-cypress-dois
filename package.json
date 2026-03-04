@@ -8,7 +8,7 @@
     "testing": "npx cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",reportFilename=\"index.html\",overwrite=false,html=true,json=true",
     "report": "npx mochawesome-merge \"mochawesome-report/*.json\" -o index.json",
     "merge": "npx marge index.json",
-  "complete": "npm run testing report merge"
+    "complete": "npm run testing report merge"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,8 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2"
   }
 }
